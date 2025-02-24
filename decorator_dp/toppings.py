@@ -7,7 +7,7 @@ class TomatoTopping(ToppingDecorator):
     def get_cost(self) -> float:
         return self.pizza.get_cost() + 4
 
-
+# IPrint, Printable, Runnable, Callable
 class MozzarellaTopping(ToppingDecorator):
     def get_details(self) -> str:
         return f"{self.pizza.get_details()} Mozzarella"
