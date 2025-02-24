@@ -10,6 +10,7 @@ class StockObserver(IObserver):
         self.ibm_price = 0.0
         self.apple_price = 0.0
         self.google_price = 0.0
+        self.subject = subject
         subject.register(self)
 
     @override
